@@ -6,23 +6,17 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:52:17 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:52:20 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/30 17:47:10 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "mlx.h" for mlx_hook()
-** "fdf.h" for key_press(), close(), mouse_press(), mouse_release() and
-** mouse_move()
-** <stdlib.h> for exit()
-*/
 
 #include "mlx.h"
 #include "fdf.h"
 #include <stdlib.h>
 
 /*
-** Close window with 'X'
+** Функция для того, чтобы закрывался проект, когда нажимаешь на красный 
+** крестик в верхнем левом углу. Для нее подключена библиотека stdlib.h
 */
 
 int		close(void *param)
@@ -32,7 +26,8 @@ int		close(void *param)
 }
 
 /*
-** Connect functions-controllers to window
+** Подключение функций нажатия клавиш, закрытие, нажатие мышки,
+** отпускание мышки, движение мышки для окна
 */
 
 void	setup_controls(t_fdf *fdf)
