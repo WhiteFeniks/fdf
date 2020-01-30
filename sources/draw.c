@@ -6,17 +6,9 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:52:37 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:52:40 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/30 18:18:01 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "fdf.h" for t_fdf type, t_point type, get_color(), WIDTH macros,
-**  HEIGHT macros, MENU_WIDTH macros, project(), new_point() and print_menu()
-** "libft.h" for FT_ABS macros and ft_bzero()
-** "mlx.h" for mlx_put_image_to_window()
-** "color.h" for MENU_BACKGROUND macros and BACKGROUND macros
-*/
 
 #include "fdf.h"
 #include "libft.h"
@@ -24,14 +16,17 @@
 #include "color.h"
 
 /*
-** Put pixel into map image
+** Функция выводит по пикселю 
+** Используется функция bits_per_pixel по man будет заполнено количеством 
+** битов, необходимых для представления цвета пикселя (также называется 
+** глубиной изображения).
 */
 
 static void	put_pixel(t_fdf *fdf, int x, int y, int color)
 {
 	int		i;
 
-	if (x >= MENU_WIDTH && x < WIDTH && y >= 0 && y < HEIGHT)
+	if (x >= INSTRUCTION_WIDTH && x < WIDTH && y >= 0 && y < HEIGHT)
 	{
 		i = (x * fdf->bits_per_pixel / 8) + (y * fdf->size_line);
 		fdf->data_addr[i] = color;
@@ -41,7 +36,7 @@ static void	put_pixel(t_fdf *fdf, int x, int y, int color)
 }
 
 /*
-** Draw line
+** Функция для рисования линии (см. Алгоритм Брезенхэма)
 */
 
 static void	draw_line(t_point f, t_point s, t_fdf *fdf)
@@ -74,7 +69,9 @@ static void	draw_line(t_point f, t_point s, t_fdf *fdf)
 }
 
 /*
-** Draw background colors (Menu background + main background)
+** Функция задания размеров окна и инструкции
+** Высота 1050 и ширина 2000 у окна
+** Ширина 300 у инструкции
 */
 
 static void	draw_background(t_fdf *fdf)
@@ -87,13 +84,13 @@ static void	draw_background(t_fdf *fdf)
 	i = 0;
 	while (i < HEIGHT * WIDTH)
 	{
-		image[i] = (i % WIDTH < MENU_WIDTH) ? MENU_BACKGROUND : BACKGROUND;
+		image[i] = (i % WIDTH < INSTRUCTION_WIDTH) ? MENU_BACKGROUND : BACKGROUND;
 		i++;
 	}
 }
 
 /*
-** Draw image
+** Функция для рисования карты (используется алгоритм Брезенхэма)
 */
 
 void		draw(t_map *map, t_fdf *fdf)

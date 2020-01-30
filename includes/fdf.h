@@ -6,7 +6,7 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:54:37 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:54:41 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/30 18:07:31 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 # define FDF_H
 
-# define HEIGHT			1080
-# define WIDTH			1920
-# define MENU_WIDTH		250
+# define HEIGHT					1050
+# define WIDTH					2000
+# define INSTRUCTION_WIDTH		300  
 
 typedef enum
 {

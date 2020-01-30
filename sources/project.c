@@ -6,7 +6,7 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:20 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:53:22 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/30 18:08:00 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ t_point		project(t_point p, t_fdf *fdf)
 	rotate_z(&p.x, &p.y, fdf->camera->gamma);
 	if (fdf->camera->projection == ISO)
 		iso(&p.x, &p.y, p.z);
-	p.x += (WIDTH - MENU_WIDTH) / 2 + fdf->camera->x_offset + MENU_WIDTH;
+	p.x += (WIDTH - INSTRUCTION_WIDTH) / 2 + fdf->camera->x_offset + INSTRUCTION_WIDTH;
 	p.y += (HEIGHT + fdf->map->height * fdf->camera->zoom) / 2
 												+ fdf->camera->y_offset;
 	return (p);

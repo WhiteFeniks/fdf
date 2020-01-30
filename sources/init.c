@@ -6,13 +6,13 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:52:44 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:52:47 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/30 18:07:54 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** "fdf.h" for t_map type, terminate(), t_fdf type, WIDTH macros, HEIGHT macros,
-**  MENU_WIDTH macros and t_camera type
+**  INSTRUCTION_WIDTH macros and t_camera type
 ** "libft.h" for ft_memalloc(), NULL macros ("libft.h" includes <string.h>),
 **  FT_INT_MAX macros, FT_INT_MIN macros and FT_MIN macros
 ** "mlx.h" for mlx_init(), mlx_new_window(), mlx_new_image()
@@ -80,7 +80,7 @@ t_camera	*camera_init(t_fdf *fdf)
 
 	if (!(camera = (t_camera *)ft_memalloc(sizeof(t_camera))))
 		terminate(ERR_CAMERA_INIT);
-	camera->zoom = FT_MIN((WIDTH - MENU_WIDTH) / fdf->map->width / 2,
+	camera->zoom = FT_MIN((WIDTH - INSTRUCTION_WIDTH) / fdf->map->width / 2,
 												HEIGHT / fdf->map->height / 2);
 	camera->alpha = 0;
 	camera->beta = 0;
