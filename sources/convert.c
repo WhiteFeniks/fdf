@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   convert.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
+/*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:52:29 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:52:32 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/30 20:59:11 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** "fdf.h" for t_coord_val type, t_map type, terminate() and pop()
-** "libft.h" for ssize_t type ("libft.h" includes <string.h>),
-** size_t ("libft.h" includes <string.h>) and ft_memalloc()
-** "error_message.h" for ERR_CONV_TO_ARR macros
-** <stdlib.h> for free()
+** "fdf.h" для структур t_coord_val, t_map; terminate() и pop()
+** "libft.h" для ssize_t type ("libft.h" содержит <string.h>),
+** size_t ("libft.h" содержит <string.h>) и ft_memalloc()
+** "error_message.h" для ERR_CONV_TO_ARR macros
+** <stdlib.h> для free()
 */
 
 #include "fdf.h"
@@ -24,8 +24,8 @@
 #include <stdlib.h>
 
 /*
-** Convert stack with t_coord_val elements (contains z value and color value)
-** to array with z values and array with color values.
+** Преобразование стека с элементами t_coord_val (содержит значение z и 
+** значение цвета) в массив со значениями z и массив цветовых значений.
 */
 
 void		stack_to_arrays(t_coord_val **coords_stack, t_map *map)

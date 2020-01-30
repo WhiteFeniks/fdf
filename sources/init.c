@@ -3,22 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   init.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
+/*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:52:44 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 18:07:54 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/30 21:18:12 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** "fdf.h" for t_map type, terminate(), t_fdf type, WIDTH macros, HEIGHT macros,
-**  INSTRUCTION_WIDTH macros and t_camera type
-** "libft.h" for ft_memalloc(), NULL macros ("libft.h" includes <string.h>),
-**  FT_INT_MAX macros, FT_INT_MIN macros and FT_MIN macros
-** "mlx.h" for mlx_init(), mlx_new_window(), mlx_new_image()
-**  and mlx_get_data_addr()
-** "error_message.h" for ERR_MAP_INIT macros, ERR_FDF_INIT macros
-**  and ERR_CAMERA_INIT macros
+** "fdf.h" содержит:
+** структуры: t_map, t_fdf, t_camera;
+** функции: terminate();
+** макросы: WIDTH, HEIGHT, INSTRUCTION_WIDTH.
+** "libft.h" содержит:
+** функции: ft_memalloc();
+** макросы: NULL в <string.h>, FT_INT_MAX, FT_INT_MIN, FT_MIN.
+** "mlx.h" содержит:
+** функции: mlx_init(), mlx_new_window(), mlx_new_image(), mlx_get_data_addr().
+** "error_message.h" содержит: 
+** макросы: ERR_MAP_INIT, ERR_FDF_INIT, ERR_CAMERA_INIT
 */
 
 #include "fdf.h"
@@ -27,7 +30,7 @@
 #include "error_message.h"
 
 /*
-** Initialize t_map element
+** Инициализация структуры t_map
 */
 
 t_map		*map_init(void)
@@ -47,7 +50,7 @@ t_map		*map_init(void)
 }
 
 /*
-** Initialize t_fdf element
+** Инициализация структуры t_fdf
 */
 
 t_fdf		*fdf_init(t_map *map)
@@ -71,7 +74,7 @@ t_fdf		*fdf_init(t_map *map)
 }
 
 /*
-** Initialize t_camera element
+** Инициализация структуры t_camera
 */
 
 t_camera	*camera_init(t_fdf *fdf)

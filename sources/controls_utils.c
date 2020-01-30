@@ -3,23 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   controls_utils.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
+/*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:52:09 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:52:12 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/30 20:53:28 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** "fdf.h" for t_fdf type and draw()
-** "key_macos.h" for key codes
+** "fdf.h" для структуры t_fdf и draw()
+** "key_macos.h" для key codes
 */
 
 #include "fdf.h"
 #include "key_macos.h"
 
 /*
-** Zoom map
+** Изменяем размер карты с помощью "+" и "-" на NUM клавиатуре, основной 
+** и скролл на мышке
 */
 
 void	zoom(int key, t_fdf *fdf)
@@ -38,7 +39,7 @@ void	zoom(int key, t_fdf *fdf)
 }
 
 /*
-** Move map
+** Перемещение карты вправо, влево и наверх
 */
 
 void	move(int key, t_fdf *fdf)
@@ -55,7 +56,7 @@ void	move(int key, t_fdf *fdf)
 }
 
 /*
-** Rotate map
+** Вращение карты с помощью NUM и основной клавиатуры
 */
 
 void	rotate(int key, t_fdf *fdf)
@@ -78,7 +79,7 @@ void	rotate(int key, t_fdf *fdf)
 }
 
 /*
-** Change z value. Make map more flatten
+** Изменение значения z. Сделать карту более плоской
 */
 
 void	flatten(int key, t_fdf *fdf)
@@ -95,7 +96,7 @@ void	flatten(int key, t_fdf *fdf)
 }
 
 /*
-** Change projection type
+** Изменение типа проекции
 */
 
 void	change_projection(int key, t_fdf *fdf)
