@@ -6,21 +6,15 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:51:59 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:52:03 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/30 16:40:51 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "fdf.h" for t_map type and percentage()
-** "color.h" for COLOR_DISCO macros, COLOR_BRICK_RED macros,
-**  COLOR_FLAMINGO macros, COLOR_JAFFA macros and COLOR_SAFFRON macros
-*/
 
 #include "fdf.h"
 #include "color.h"
 
 /*
-** Get color from default palette. Color depends on altitude
+** Функция раскрашивает в зависиомсти от высоты (z) линии 
 */
 
 int	get_default_color(int z, t_map *map)
@@ -29,15 +23,15 @@ int	get_default_color(int z, t_map *map)
 
 	percentage = percent(map->z_min, map->z_max, z);
 	if (percentage < 0.2)
-		return (COLOR_DISCO);
+		return (COLOR_LILAC);
 	else if (percentage < 0.4)
-		return (COLOR_BRICK_RED);
+		return (COLOR_BLUESKY);
 	else if (percentage < 0.6)
-		return (COLOR_FLAMINGO);
+		return (COLOR_LIME);
 	else if (percentage < 0.8)
-		return (COLOR_JAFFA);
+		return (COLOR_GOLD);
 	else
-		return (COLOR_SAFFRON);
+		return (COLOR_RASPBERRIES);
 }
 
 /*
