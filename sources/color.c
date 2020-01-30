@@ -6,7 +6,7 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:51:59 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 16:40:51 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/30 17:15:52 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ int	get_default_color(int z, t_map *map)
 }
 
 /*
-** Get light for color. Result depends on point position.
-** This function is needed to create linear gradient.
+** Вспомогательная функция (получения света) 
+** для получения линейного градиента
 */
 
 int	get_light(int start, int end, double percentage)
@@ -45,8 +45,8 @@ int	get_light(int start, int end, double percentage)
 }
 
 /*
-** Get color. Result depends on point position.
-** This function is needed to create linear gradient.
+** Функция раскрашивает в зависимости от положения точки
+** Она необходима для плавного перехода цветов на линии (линейный градиент)
 */
 
 int	get_color(t_point current, t_point start, t_point end, t_point delta)
@@ -62,14 +62,10 @@ int	get_color(t_point current, t_point start, t_point end, t_point delta)
 		percentage = percent(start.x, end.x, current.x);
 	else
 		percentage = percent(start.y, end.y, current.y);
-	red = get_light((start.color >> 16) & 0xFF,
-					(end.color >> 16) & 0xFF,
+	red = get_light((start.color >> 16) & 0xFF, (end.color >> 16) & 0xFF,
 					percentage);
-	green = get_light((start.color >> 8) & 0xFF,
-					(end.color >> 8) & 0xFF,
+	green = get_light((start.color >> 8) & 0xFF, (end.color >> 8) & 0xFF,
 					percentage);
-	blue = get_light(start.color & 0xFF,
-					end.color & 0xFF,
-					percentage);
+	blue = get_light(start.color & 0xFF, end.color & 0xFF, percentage);
 	return ((red << 16) | (green << 8) | blue);
 }
