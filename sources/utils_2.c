@@ -6,17 +6,9 @@
 /*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:37 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/31 18:24:30 by atfoster         ###   ########.fr       */
+/*   Updated: 2020/01/31 18:26:48 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "fdf.h" for t_point type and t_map type
-** "libft.h" for t_putendl_fd()
-** <stdlib.h> for exit()
-** <stdio.h> for perror()
-** <errno.h> for errno value
-*/
 
 #include "fdf.h"
 #include "libft.h"
