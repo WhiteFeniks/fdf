@@ -3,23 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   read_map.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
+/*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:26 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:53:28 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 16:08:07 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "fdf.h" for t_coord_val type, terminate(), ft_isnumber(), ft_atoi_base(),
-**  t_map type and push()
-** "libft.h" for size_t type ("libft.h" includes <string.h>), ft_memalloc()
-**  ft_strsplit(), ft_atoi(), NULL macros ("libft.h" includes <string.h>)
-**  and ft_strdel()
-** "get_next_line.h" for get_next_line()
-** "error_message.h" for ERR_MAP_READING macros and ERR_MAP macros
-** <stdlib.h> for free()
-*/
 
 #include "fdf.h"
 #include "libft.h"
@@ -42,7 +31,7 @@ static void			free_strsplit_arr(char **arr)
 }
 
 /*
-** Create t_coord_val element with information about z and color value
+** Создаем элементы в структуре t_coord_val со значением z и цветом
 */
 
 static t_coord_val	*new_coord(char *s)
@@ -89,7 +78,7 @@ static void			parse_line(char **coords_line,
 }
 
 /*
-** Read map from file line by line
+** Чтение карты из файла линия за линией
 */
 
 int					read_map(const int fd,

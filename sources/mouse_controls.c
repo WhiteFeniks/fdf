@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mouse_controls.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
+/*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:14 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:53:16 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 15:09:21 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 #include "key_macos.h"
 
 /*
-** Handle mouse press
+** Нажатие кнопки мыши
 */
 
 int			mouse_press(int button, int x, int y, void *param)
@@ -37,7 +37,7 @@ int			mouse_press(int button, int x, int y, void *param)
 }
 
 /*
-** Handle mouse release
+** Отпускание нажатия кнопки мыши
 */
 
 int			mouse_release(int button, int x, int y, void *param)
