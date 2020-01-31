@@ -3,20 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   convert.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:52:29 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/31 14:57:58 by atfoster         ###   ########.fr       */
+/*   Updated: 2020/01/31 16:47:00 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "fdf.h" для структур t_coord_val, t_map; terminate() и pop()
-** "libft.h" для ssize_t type ("libft.h" содержит <string.h>),
-** size_t ("libft.h" содержит <string.h>) и ft_memalloc()
-** "error_message.h" для ERR_CONV_TO_ARR macros
-** <stdlib.h> для free()
-*/
 
 #include "fdf.h"
 #include "libft.h"
