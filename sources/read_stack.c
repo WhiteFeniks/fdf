@@ -6,7 +6,7 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:31 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/31 17:31:28 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 19:19:44 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 
 /*
-** Функция добавления значения координаты (t_coord_val) в стек 
+** Функция добавления значения координаты (t_coord_val) в стек
 */
 
 void		push(t_coord_val **coords_stack, t_coord_val *new)
@@ -28,7 +28,7 @@ void		push(t_coord_val **coords_stack, t_coord_val *new)
 }
 
 /*
-** Функция получения значения координаты (t_coord_val) из стека 
+** Функция получения значения координаты (t_coord_val) из стека
 */
 
 t_coord_val	*pop(t_coord_val **coords_stack)

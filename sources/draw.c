@@ -6,7 +6,7 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:52:37 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 18:18:01 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 19:13:38 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 #include "color.h"
 
 /*
-** Функция выводит по пикселю 
-** Используется функция bits_per_pixel по man будет заполнено количеством 
-** битов, необходимых для представления цвета пикселя (также называется 
+** Функция выводит по пикселю
+** Используется функция bits_per_pixel по man будет заполнено количеством
+** битов, необходимых для представления цвета пикселя (также называется
 ** глубиной изображения).
 */
 
@@ -84,7 +84,8 @@ static void	draw_background(t_fdf *fdf)
 	i = 0;
 	while (i < HEIGHT * WIDTH)
 	{
-		image[i] = (i % WIDTH < INSTRUCTION_WIDTH) ? MENU_BACKGROUND : BACKGROUND;
+		image[i] = (i % WIDTH < INSTRUCTION_WIDTH) ?
+			MENU_BACKGROUND : BACKGROUND;
 		i++;
 	}
 }
@@ -107,10 +108,10 @@ void		draw(t_map *map, t_fdf *fdf)
 		{
 			if (x != fdf->map->width - 1)
 				draw_line(project(new_point(x, y, map), fdf),
-					project(new_point(x + 1, y, map), fdf), fdf);
+						project(new_point(x + 1, y, map), fdf), fdf);
 			if (y != fdf->map->height - 1)
 				draw_line(project(new_point(x, y, map), fdf),
-					project(new_point(x, y + 1, map), fdf), fdf);
+						project(new_point(x, y + 1, map), fdf), fdf);
 			x++;
 		}
 		y++;
