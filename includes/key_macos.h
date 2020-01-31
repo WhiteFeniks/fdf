@@ -6,7 +6,7 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:54:48 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:54:54 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 17:50:29 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,11 @@
 # define NUM_PAD_0			82
 # define NUM_PAD_1			83
 # define NUM_PAD_2			84
-# define NUM_PAD_3			85
 # define NUM_PAD_4			86
 # define NUM_PAD_5			87
 # define NUM_PAD_6			88
 # define NUM_PAD_7			89
 # define NUM_PAD_8			91
-# define NUM_PAD_9			92
 # define NUM_PAD_PLUS		69
 # define NUM_PAD_MINUS		78
 
@@ -46,13 +44,11 @@
 # define MAIN_PAD_0			29
 # define MAIN_PAD_1			18
 # define MAIN_PAD_2			19
-# define MAIN_PAD_3			20
 # define MAIN_PAD_4			21
 # define MAIN_PAD_5			23
 # define MAIN_PAD_6			22
 # define MAIN_PAD_7			26
 # define MAIN_PAD_8			28
-# define MAIN_PAD_9			25
 # define MAIN_PAD_PLUS		24
 # define MAIN_PAD_MINUS		27
 # define MAIN_PAD_LESS		43

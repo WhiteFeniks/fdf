@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   controls_utils.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:52:09 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 20:53:28 by atfoster         ###   ########.fr       */
+/*   Updated: 2020/01/31 17:50:10 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,11 +69,9 @@ void	rotate(int key, t_fdf *fdf)
 		fdf->camera->beta -= 0.05;
 	else if (key == NUM_PAD_6 || key == MAIN_PAD_6)
 		fdf->camera->beta += 0.05;
-	else if (key == NUM_PAD_1 || key == MAIN_PAD_1
-		|| key == NUM_PAD_3 || key == MAIN_PAD_3)
+	else if (key == NUM_PAD_1 || key == MAIN_PAD_1)
 		fdf->camera->gamma += 0.05;
-	else if (key == NUM_PAD_7 || key == MAIN_PAD_7
-		|| key == NUM_PAD_9 || key == MAIN_PAD_9)
+	else if (key == NUM_PAD_7 || key == MAIN_PAD_7)
 		fdf->camera->gamma -= 0.05;
 	draw(fdf->map, fdf);
 }

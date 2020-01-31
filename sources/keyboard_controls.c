@@ -6,7 +6,7 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:52:52 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/31 17:04:07 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 17:48:04 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,10 @@ int			key_press(int key, void *param)
 		move(key, fdf);
 	else if (key == NUM_PAD_1 || key == MAIN_PAD_1
 		|| key == NUM_PAD_2 || key == MAIN_PAD_2
-		|| key == NUM_PAD_3 || key == MAIN_PAD_3
 		|| key == NUM_PAD_4 || key == MAIN_PAD_4
 		|| key == NUM_PAD_6 || key == MAIN_PAD_6
 		|| key == NUM_PAD_7 || key == MAIN_PAD_7
-		|| key == NUM_PAD_8 || key == MAIN_PAD_8
-		|| key == NUM_PAD_9 || key == MAIN_PAD_9)
+		|| key == NUM_PAD_8 || key == MAIN_PAD_8)
 		rotate(key, fdf);
 	else if (key == MAIN_PAD_LESS || key == MAIN_PAD_MORE)
 		flatten(key, fdf);
