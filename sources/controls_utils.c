@@ -3,17 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   controls_utils.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
+/*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:52:09 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/31 17:50:10 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 18:11:20 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "fdf.h" для структуры t_fdf и draw()
-** "key_macos.h" для key codes
-*/
 
 #include "fdf.h"
 #include "key_macos.h"

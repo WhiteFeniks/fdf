@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils_2.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
+/*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:37 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:53:39 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 18:24:30 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 #include <errno.h>
 
 /*
-** Get percent
+** Шаг градиента
 */
 
 double	percent(int start, int end, int current)
@@ -39,7 +39,7 @@ double	percent(int start, int end, int current)
 }
 
 /*
-** Terminate execution and display error message
+** Завершение выполнения и вывод сообщения об ошибке
 */
 
 void	terminate(char *s)
@@ -52,7 +52,7 @@ void	terminate(char *s)
 }
 
 /*
-** Get index in array by x and y
+** Получаем индекс в массиве по x и y
 */
 
 int		get_index(int x, int y, int width)
@@ -61,7 +61,7 @@ int		get_index(int x, int y, int width)
 }
 
 /*
-** Create t_point element (x value + y value + z value + color value)
+** Создаем элемент стрктуры t_point (значение x + значение y + значение z + цвет)
 */
 
 t_point	new_point(int x, int y, t_map *map)

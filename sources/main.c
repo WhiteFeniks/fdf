@@ -3,24 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
+/*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:01 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 17:52:57 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 18:16:31 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "fdf.h" for t_map type, t_coord_val type, t_fdf type, terminate(),
-**  map_init(), read_map(), fdf_init(), stack_to_arrays(), camera_init(),
-**  draw() and setup_controls()
-** "mlx.h" for mlx_loop()
-** "error_message.h" for ERR_MAP macros, ERR_MAP_READING macros
-**  and ERR_USAGE macros
-** <errno.h> for errno variable
-** <fcntl.h> for open() and O_RDONLY flag
-** <stdlib.h> for NULL macros
-*/
 
 #include "fdf.h"
 #include "mlx.h"

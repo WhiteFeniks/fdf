@@ -6,7 +6,7 @@
 /*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:26 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/31 16:08:07 by atfoster         ###   ########.fr       */
+/*   Updated: 2020/01/31 18:20:21 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 
 /*
 ** Free array that was returned by ft_strsplit()
+** Очищаем массив и возвращаем его в ft_strsplit()
 */
 
 static void			free_strsplit_arr(char **arr)
@@ -55,8 +56,8 @@ static t_coord_val	*new_coord(char *s)
 }
 
 /*
-** Get coordinate values from line, create t_coord_val elements
-** and them add to stack
+** Получаем значения координат из строки, 
+** создаем элементы структуры t_coord_val и добавляем их в стек
 */
 
 static void			parse_line(char **coords_line,
@@ -78,7 +79,7 @@ static void			parse_line(char **coords_line,
 }
 
 /*
-** Чтение карты из файла линия за линией
+** Чтение карты из файла
 */
 
 int					read_map(const int fd,

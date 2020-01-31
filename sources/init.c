@@ -6,23 +6,9 @@
 /*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:52:44 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/31 14:54:58 by atfoster         ###   ########.fr       */
+/*   Updated: 2020/01/31 18:16:23 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "fdf.h" содержит:
-** структуры: t_map, t_fdf, t_camera;
-** функции: terminate();
-** макросы: WIDTH, HEIGHT, INSTRUCTION_WIDTH.
-** "libft.h" содержит:
-** функции: ft_memalloc();
-** макросы: NULL в <string.h>, FT_INT_MAX, FT_INT_MIN, FT_MIN.
-** "mlx.h" содержит:
-** функции: mlx_init(), mlx_new_window(), mlx_new_image(), mlx_get_data_addr().
-** "error_message.h" содержит: 
-** макросы: ERR_MAP_INIT, ERR_FDF_INIT, ERR_CAMERA_INIT
-*/
 
 #include "fdf.h"
 #include "libft.h"
