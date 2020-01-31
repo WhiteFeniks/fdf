@@ -3,17 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   project.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
+/*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:20 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 18:08:00 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 16:48:13 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "fdf.h" for t_fdf type
-** "math.h" for sin(), and cos()
-*/
 
 #include "fdf.h"
 #include "math.h"
