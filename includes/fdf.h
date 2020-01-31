@@ -6,7 +6,7 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:54:37 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/31 18:04:29 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 19:27:22 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 # define HEIGHT					1050
 # define WIDTH					2000
-# define INSTRUCTION_WIDTH		350  
+# define INSTRUCTION_WIDTH		350
 
 typedef enum
 {
