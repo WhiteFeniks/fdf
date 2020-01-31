@@ -6,7 +6,7 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:08 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/31 17:17:41 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 17:52:10 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	print_menu(t_fdf *fdf)
 	mlx_string_put(mlx, win, 15, y += 30, TEXT_COLOR, "Rotate:");
 	mlx_string_put(mlx, win, 57, y += 25, TEXT_COLOR, "X-Axis - 2/8");
 	mlx_string_put(mlx, win, 57, y += 25, TEXT_COLOR, "Y-Axis - 4/6");
-	mlx_string_put(mlx, win, 57, y += 25, TEXT_COLOR, "Z-Axis - 1(3)/7(9)");
+	mlx_string_put(mlx, win, 57, y += 25, TEXT_COLOR, "Z-Axis - 1/7");
 	mlx_string_put(mlx, win, 15, y += 30, TEXT_COLOR, "Projection");
 	mlx_string_put(mlx, win, 57, y += 25, TEXT_COLOR, "ISO: I Key");
 	mlx_string_put(mlx, win, 57, y += 25, TEXT_COLOR, "Parallel: P Key");
