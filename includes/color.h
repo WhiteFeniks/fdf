@@ -6,7 +6,7 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:54:25 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 17:20:44 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 17:14:53 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 # define COLOR_H
 
-# define TEXT_COLOR			0xEAEAEA
+# define TEXT_COLOR			0xFFFFFF
 # define BACKGROUND			0x222222
-# define MENU_BACKGROUND	0x1E1E1E
+# define MENU_BACKGROUND	0x000000
 
 # define COLOR_LILAC		0x7B68EE
 # define COLOR_BLUESKY	    0x00BFFF

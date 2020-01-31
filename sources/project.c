@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   project.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:20 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/31 16:48:13 by atfoster         ###   ########.fr       */
+/*   Updated: 2020/01/31 17:28:36 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "math.h"
 
 /*
-** Rotate coordinate by x axis
+** Повернуть координату по оси x
 */
 
 static void	rotate_x(int *y, int *z, double alpha)
@@ -27,7 +27,7 @@ static void	rotate_x(int *y, int *z, double alpha)
 }
 
 /*
-** Rotate coordinate by y axis
+** Повернуть координату по оси y
 */
 
 static void	rotate_y(int *x, int *z, double beta)
@@ -40,7 +40,7 @@ static void	rotate_y(int *x, int *z, double beta)
 }
 
 /*
-** Rotate coordinate by z axis
+** Повернуть координату по оси z
 */
 
 static void	rotate_z(int *x, int *y, double gamma)
@@ -55,7 +55,7 @@ static void	rotate_z(int *x, int *y, double gamma)
 }
 
 /*
-** Convert coordinate to iso projection
+** Функция получения изометрической проекции
 */
 
 static void	iso(int *x, int *y, int z)
@@ -70,7 +70,7 @@ static void	iso(int *x, int *y, int z)
 }
 
 /*
-** Project coordinate to 2D plane
+** Получение паралелльной проекции (горизонтальной плоскости проекции)
 */
 
 t_point		project(t_point p, t_fdf *fdf)

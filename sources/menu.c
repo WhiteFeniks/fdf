@@ -6,22 +6,16 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:08 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:53:10 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 17:17:41 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "fdf.h" for t_fdf type
-** "mlx.h" for mlx_string_put()
-** "color.h" for TEXT_COLOR
-*/
 
 #include "fdf.h"
 #include "mlx.h"
 #include "color.h"
 
 /*
-** Print "How to Use" instruction.
+** Функция печати инструкции на окне
 */
 
 void	print_menu(t_fdf *fdf)

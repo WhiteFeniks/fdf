@@ -6,23 +6,17 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:52:52 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:52:54 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 17:04:07 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "fdf.h" for t_fdf type, zoom(), move(), rotate(), flatten() and
-** change_projection()
-** "key_macos.h" for key codes
-** <stdlib.h> for exit()
-*/
 
 #include "fdf.h"
 #include "key_macos.h"
 #include <stdlib.h>
 
 /*
-** Handle key press
+** Функция подключения кнопок: для выхода, увеличения и уменьшения, движения,
+** поворота, растягивания и получения проекции
 */
 
 int			key_press(int key, void *param)

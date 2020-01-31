@@ -6,20 +6,15 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:31 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:53:34 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 17:31:28 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "fdf.h" for t_coord_val type
-** <stdlib.h> for NULL macros
-*/
 
 #include "fdf.h"
 #include <stdlib.h>
 
 /*
-** Add t_coord_val element to stack
+** Функция добавления значения координаты (t_coord_val) в стек 
 */
 
 void		push(t_coord_val **coords_stack, t_coord_val *new)
@@ -33,7 +28,7 @@ void		push(t_coord_val **coords_stack, t_coord_val *new)
 }
 
 /*
-** Get t_coord_val element from stack
+** Функция получения значения координаты (t_coord_val) из стека 
 */
 
 t_coord_val	*pop(t_coord_val **coords_stack)

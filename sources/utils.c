@@ -6,21 +6,15 @@
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:43 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/30 12:53:45 by umoff            ###   ########.fr       */
+/*   Updated: 2020/01/31 17:37:48 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** "fdf.h" for t_bool type
-** "libft.h" for ft_toupper(), size_t type ("libft.h" includes <string.h>)
-**  and ft_isspace()
-*/
 
 #include "fdf.h"
 #include "libft.h"
 
 /*
-** Check is this char present in selected numeral system
+** Проверка символа на наличие в выбранной системе счисления
 */
 
 static int		ft_isdigit_base(char c, int base)
@@ -39,7 +33,7 @@ static int		ft_isdigit_base(char c, int base)
 }
 
 /*
-** Check is this string contain prefix of its numeral system
+** Проверка префикса в строке (Ех: для 16-ричной х, 2-ой - b)
 */
 
 static t_bool	ft_has_prefix(const char *str, int base)
@@ -62,7 +56,7 @@ static t_bool	ft_has_prefix(const char *str, int base)
 }
 
 /*
-** Check is this string a number according to the selected numeral system
+** Функция проверки является ли строка числом в выбранной системе счисления
 */
 
 t_bool			ft_isnumber(char *str, int base)
@@ -91,7 +85,8 @@ t_bool			ft_isnumber(char *str, int base)
 }
 
 /*
-** Convert string to number according to the selected numeral system
+** Функция преобразования строки в число в соответствии с выбранной 
+** системой счисления
 */
 
 int				ft_atoi_base(const char *str, int base)
