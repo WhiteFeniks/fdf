@@ -6,7 +6,7 @@
 /*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:26 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/31 18:20:21 by atfoster         ###   ########.fr       */
+/*   Updated: 2020/01/31 18:26:14 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 #include <stdlib.h>
 
 /*
-** Free array that was returned by ft_strsplit()
 ** Очищаем массив и возвращаем его в ft_strsplit()
 */
 
