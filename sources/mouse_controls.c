@@ -6,7 +6,7 @@
 /*   By: atfoster <atfoster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 12:53:14 by umoff             #+#    #+#             */
-/*   Updated: 2020/01/31 15:09:21 by atfoster         ###   ########.fr       */
+/*   Updated: 2020/01/31 18:16:53 by atfoster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ int			mouse_release(int button, int x, int y, void *param)
 }
 
 /*
-** Handle mouse move
+** Движение мышкой
 */
 
 int			mouse_move(int x, int y, void *param)
